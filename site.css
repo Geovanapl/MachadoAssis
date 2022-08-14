@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/*cor1-#F8B81E
+cor2-#D98D1A
+cor3-#F08428
+cor4-#D9571A
+cor5-#F8441E
+*/
+:root{/*criar variavel*/
+    --cor1:#F8B81E;
+    --cor2:#D98D1A;
+    --cor3:#F08428;
+    --cor4:#D9571A;
+    --cor5:#F8441E;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor2);/*var chama a variavel*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor5),var(--cor2));/*dá um degrade*//* "to bottom" direção do degrade*/
+    min-height: 100px;/*altura minima*/
+    text-align:center;/*move o texto para o lugar desejado*/
+    padding-top: 20px;/*espaçamento interno do topo*/
+    color:aliceblue;/*cor de fonte*/
+    /*text-shadow: 1px 2px 4px;/*sombreado da fonte*/
+}
+nav{
+    background-image: linear-gradient(to top, var(--cor5),var(--cor2));
+    padding: 10px;/*espaçamento interno*/
+    box-shadow: 2px 2px 2px var(--cor5);/*sombreado da caixa inteira*/
+}
+nav > a{/*"nav > a" seleciona a tag q esta dentro de outra*/
+    color: black;
+    text-decoration: none;/*sem barra embaixo*/
+    font-weight: bold;/*deixa em destaque*/
+    border-radius: 3px;/*deixa aredondado*/
+    padding: 10px;/*espaçamento*/
+    transition-duration: 0.5s;/*duração de transição*/
+} 
+nav > a:hover{
+    background-color: var(--cor1);
+}
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin: auto;/* centraliza e divide igualmente os lados*/
+    border-radius: 3px;
+}
+h2{
+    color:white ;
+    background-image: linear-gradient(to right, var(--cor5),var(--cor2));
+    margin-bottom: 15px;
+}
+p{
+    text-align: justify;
+    text-indent: 40px;/*espaçamento de paregrafo*/
+    margin-top: 10px;
+}
+pre{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+iframe{
+    border: 10px solid var(--cor3);
+    margin: 30px 0px;
+}
+img{
+    border: 10px solid var(--cor3);
+    margin-top: 10px;
+}
+figcaption{
+    font-size: 12px;
+}
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+}
+h3{
+    background-color: var(--cor5);
+    padding: 10px;
+    margin: -15px -10px 0px -10px;
+    border-radius: 5px 5px 0px 0px;
+}
+ul{
+    list-style-position: inside;
+    text-align: justify;
+}
+footer{
+    background-color: var(--cor2);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+}
+footer > a{
+    text-decoration: none;
+    color:black ;
+}
